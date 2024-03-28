@@ -21,15 +21,15 @@ $ npm i js-containers
 
 ## API
 
-* [each collection](#user-content-each-collection)
-  - [clear](#user-content-clear())
+* [each collection](#each-collection)
+  - [clear](#clear)
   - [load](#user-content-load)
-  - [has](#collection-has)
-  - [[Symbol.iterator]](#collection-iterator)
-  - [toArray](#collection-to-array)
-  - [count](#collection-count)
+  - [has](#user-content-has)
+  - [[Symbol.iterator]](#user-content-symbol-iterator)
+  - [toArray](#user-content-to-array)
+  - [count](#user-content-count)
 
-* [Stack](#class-stack)
+* [Stack](#user-content-class-stack)
   - [common functionality](#each-collection)
   - [constructor](#stack-constructor)
   - [push](#stack-push)
@@ -49,7 +49,7 @@ $ npm i js-containers
 
 ### each collection
 
-#### clear()
+#### clear
 Remove all data
 _Returns:_ This collection
 [`<Array>`][array] tuple with two parts of the array
@@ -59,13 +59,13 @@ Add values from iterabled object to the collection
 - `iterabled`: `any` object which can be iterable
 _Returns:_ [`<Array>`][array] tuple with two parts of the array
 
-#### has(value)
+#### has
 Check existing the value in the collection
 - `value`: `any` value which we can check
 
 _Returns:_ `true` or `false`
 
-#### [[Symbol.iterator]]()
+#### [[Symbol.iterator]]
 Functionality which is getting iterabling
 _Returns:_ [`<Array>`][array] tuple with two parts of the array
 
