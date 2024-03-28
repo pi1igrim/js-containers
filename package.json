@@ -1,0 +1,39 @@
+{
+  "name": "js-containers",
+  "version": "1.0.0",
+  "description": "Queue, Stack, LinkedList containers",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "node",
+    "tools",
+    "utilities",
+    "containers",
+    "queue",
+    "list",
+    "linkedlist",
+    "stack"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "node_modules/.bin/jest --watchAll",
+    "cover": "node_modules/.bin/jest --coverage",
+    "lint": "node_modules/.bin/eslint **/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pi1igrim/js-containers.git"
+  },
+  "author": "Alexander Ponezha",
+  "bugs": {
+    "url": "https://github.com/pi1igrim/js-containers/issues"
+  },
+  "homepage": "https://github.com/pi1igrim/js-containers#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0"
+  }
+}
