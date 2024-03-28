@@ -1,11 +1,8 @@
 # js-containers
+
 Provides additional containers such as Stack, Queue, LinkedList, etc.
 
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pi1igrim/js-containers/blob/main/LICENSE)
-
-## Description
-
-This package provides additional containers such as Stack, Queue, LinkedList, etc.
 
 ## Motivation
 
@@ -16,85 +13,93 @@ But sometimes programmers want to express their ideas more clearly by using cert
 ## Installation
 
 ``` bash
-$ npm i js-containers
+npm i js-containers
 ```
 
 ## API
 
 * [each collection](#each-collection)
-  - [clear](#clear)
-  - [load](#user-content-load)
-  - [has](#user-content-has)
-  - [[Symbol.iterator]](#user-content-symbol-iterator)
-  - [toArray](#user-content-to-array)
-  - [count](#user-content-count)
+  * [clear](#clear)
+  * [load](#user-content-load)
+  * [has](#user-content-has)
+  * [[Symbol.iterator]](#symbol-iterator)
+  * [toArray](#user-content-to-array)
+  * [count](#user-content-count)
 
-* [Stack](#user-content-class-stack)
-  - [common functionality](#each-collection)
-  - [constructor](#stack-constructor)
-  - [push](#stack-push)
-  - [pop](#stack-pop)
+* [Stack](#stack)
+  * [common functionality](#each-collection)
+  * [constructor](#stack-constructor)
+  * [push](#stack-push)
+  * [pop](#stack-pop)
 
 * [Queue](#queue)
-  - [common functionality](#each-collection)
-  - [constructor](#stack-constructor)
-  - [equeue](#queue-enqueue)
-  - [dequeue](#queue-dequeue)
+  * [common functionality](#each-collection)
+  * [constructor](#stack-constructor)
+  * [equeue](#queue-enqueue)
+  * [dequeue](#queue-dequeue)
 
 * [LinkedList](#linked-list)
-  - [common functionality](#each-collection)
-  - [constructor](#stack-constructor)
-  - [equeue](#linked-list-enqueue)
-  - [dequeue](#linked-list--dequeue)
+  * [common functionality](#each-collection)
+  * [constructor](#stack-constructor)
+  * [equeue](#linked-list-enqueue)
+  * [dequeue](#linked-list--dequeue)
 
 ### each collection
 
-#### clear
+#### clear() {#clear}
+
 Remove all data
 _Returns:_ This collection
 [`<Array>`][array] tuple with two parts of the array
 
-#### load
+#### load() {#load}
+
 Add values from iterabled object to the collection
-- `iterabled`: `any` object which can be iterable
+
+* `iterabled`: `any` object which can be iterable
 _Returns:_ [`<Array>`][array] tuple with two parts of the array
 
-#### has
+#### has(value) {#has}
+
 Check existing the value in the collection
-- `value`: `any` value which we can check
+
+* `value`: `any` value which we can check
 
 _Returns:_ `true` or `false`
 
-#### [[Symbol.iterator]]
+#### [[Symbol.iterator]]() {#symbol-iterator}
+
 Functionality which is getting iterabling
 _Returns:_ [`<Array>`][array] tuple with two parts of the array
 
-#### toArray()
+#### toArray() {#to-array}
+
 Export data to an array
 _Returns:_ [`<Array>`][array] tuple with two parts of the array
 
 #### count
+
 Return number of values
 _Returns:_ [`<Array>`][array] tuple with two parts of the array
 
-- `login`: [`<string>`][string] login to test
-- `password`: [`<string>`][string] password to test
-- `required`: [`<Array>`][array] required tests configs
-- `optional`: [`<Array>`][array] optional tests configs, default: `[]`
+* `login`: [`<string>`][string] login to test
+* `password`: [`<string>`][string] password to test
+* `required`: [`<Array>`][array] required tests configs
+* `optional`: [`<Array>`][array] optional tests configs, default: `[]`
 
 ](#collection-clear)
-- `index`: [`<number>`][number] index defining end of first part and start of
-  second
-- `array`: [`<Array>`][array] to be split
 
+* `index`: [`<number>`][number] index defining end of first part and start of
+  second
+* `array`: [`<Array>`][array] to be split
 
 Split array into two parts
 
-### Stack(index, array)
+### Stack
 
-- `index`: [`<number>`][number] index defining end of first part and start of
+* `index`: [`<number>`][number] index defining end of first part and start of
   second
-- `array`: [`<Array>`][array] to be split
+* `array`: [`<Array>`][array] to be split
 
 _Returns:_ [`<Array>`][array] tuple with two parts of the array
 
